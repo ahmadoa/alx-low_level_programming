@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * jack_bauer - runs a 24 hours clock
+ */
+
 void jack_bauer(void)
 {
 	int min;
