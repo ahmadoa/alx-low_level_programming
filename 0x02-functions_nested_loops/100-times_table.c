@@ -32,7 +32,7 @@ void print_times_table(int n)
 					printf(",  %d", prod);
 				}
 			}
-			_putchar('\n');
+			printf("\n");
 		}
 	}
 	else if (n == 0)
