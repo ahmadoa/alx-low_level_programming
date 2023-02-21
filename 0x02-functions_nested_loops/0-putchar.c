@@ -1,13 +1,22 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
- * main - program that prints "_putchar"
- * Return: returns 0 (success)
+ * main - prints _putchar followed by a new line
+ * Return: 0 (success)
  */
 
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	int len_in_bytes = sizeof(str);
+	int length = len_in_bytes / sizeof(str[0]);
+	int i;
+
+	for (i = 0; i <= length; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
+
 	return (0);
 }
