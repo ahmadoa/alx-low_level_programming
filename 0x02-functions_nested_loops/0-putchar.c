@@ -12,7 +12,7 @@ int main(void)
 	int length = len_in_bytes / sizeof(str[0]);
 	int i;
 
-	for (i = 0; i <= length-2; i++)
+	for (i = 0; i <= length - 2; i++)
 	{
 		_putchar(str[i]);
 	}
