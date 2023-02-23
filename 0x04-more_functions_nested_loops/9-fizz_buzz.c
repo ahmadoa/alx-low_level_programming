@@ -2,6 +2,7 @@
 
 /**
  * main - Fizz-Buzz test
+ * Return: 0
  */
 
 void main(void)
