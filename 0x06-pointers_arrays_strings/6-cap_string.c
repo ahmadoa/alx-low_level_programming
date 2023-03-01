@@ -13,8 +13,7 @@ char *cap_string(char *p)
 	i = 0;
 	while (p[i] != '\0')
 	{
-		if (p[i] == 32 ||
-				p[i] == 46 ||
+		if (p[i] == ' ' ||
 				p[i] == '\n' ||
 				p[i] == '\t' ||
 				p[i] == ',' ||
@@ -26,7 +25,8 @@ char *cap_string(char *p)
 				p[i] == '(' ||
 				p[i] == ')' ||
 				p[i] == '{' ||
-				p[i] == '}')
+				p[i] == '}' ||
+				i == 0)
 		{
 			if (p[i + 1] >= 'a' && p[i + 1] <= 'z')
 				p[i + 1] = p[i + 1] - 32;
