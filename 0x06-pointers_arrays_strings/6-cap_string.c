@@ -33,5 +33,8 @@ char *cap_string(char *p)
 		}
 		i++;
 	}
+	if (p[i - 1] == '\n')
+		p[i - 1] = '\0';
+
 	return (p);
 }
