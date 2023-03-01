@@ -13,7 +13,7 @@ char *cap_string(char *p)
 	i = 0;
 	while (p[i])
 	{
-		while (!p[i] >= 'a' && p[i] <= 'z')
+		while (!(p[i] >= 'a' && p[i] <= 'z'))
 			i++;
 
 		if (p[i - 1] == ' ' ||
