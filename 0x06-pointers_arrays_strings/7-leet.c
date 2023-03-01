@@ -8,8 +8,8 @@
 
 char *leet(char *s)
 {
-	char be[] = 'aAeEoOtTlL';
-	char ae[] = '4433007711';
+	char be[] = "aAeEoOtTlL";
+	char ae[] = "4433007711";
 	int i, j;
 
 	i = 0;
