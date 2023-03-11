@@ -2,5 +2,6 @@
 #define MAIN_H
 
 int _putchar(char ch);
+int convertChar(char *s);
 
 #endif
