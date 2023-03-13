@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 		str[k] = s1[k];
 
 	limit = s2size;
-	for (s2size = 0; s2size <= limit; k++; j++)
+	for (s2size = 0; s2size <= limit; k++, j++)
 		str[k] = s2[s2size];
 
 	return (str);
