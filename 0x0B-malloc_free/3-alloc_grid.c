@@ -9,7 +9,7 @@
  * Return: the array pointer, NULL if width or height is 0
  */
 
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **twodim;
 	int x, y;
