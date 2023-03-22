@@ -1,5 +1,8 @@
-#ifndef _function_pointers_
-#define _function_pointers_
+#ifndef _function_pointers_h_
+#define _function_pointers_h_
+
+#include <stddef.h>
+#include <stdlib.h>
 
 int _putchar(char ch);
 void print_name(char *name, void (*f)(char *));
