@@ -4,6 +4,7 @@
 /**
  * sum_them_all - sums all of the functions args
  * @n: number of args
+ * @...: anonymous variables
  * Return: sum of args
  */
 
