@@ -13,3 +13,17 @@ The tasks are:
 - 4-free_listint.c : a function that frees a listint_t list.
 
 - 5-free_listint2.c : a function that frees a listint_t list.
+
+- 6- pop_listint.c : a function that deletes the head node of a linked list, and returns the value n of the node.
+
+- 7-get_nodeint.c : a function that returns the nth node of a linked list.
+
+- 8-sum_listint.c : a function that returns the sum of all the data (n) of a linked list.
+
+- 9-insert_nodeint.c : a function that inserts a new nide at a given position.
+
+- 10-delete_nodeint.c : a function that deletes the node at a specific index of a linked list.
+
+- 100-reverse_listint.c : a function that reverses a linked list.
+
+- 103-find_loop.c : a function that finds the loop in a linked list.
