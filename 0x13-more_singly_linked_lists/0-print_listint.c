@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * print_listint - print elements of a linked list
@@ -14,8 +13,8 @@ size_t print_listint(const listint_t *h)
 	while (h)
 	{
 		printf("%d\n", h->n);
-		s++;
 		h = h->next;
+		s++;
 	}
 
 	return (s);
