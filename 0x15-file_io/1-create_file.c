@@ -25,12 +25,9 @@ int create_file(const char *filename, char *text_content)
 
 	filedesc = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	if (filedesc == -1)
-		return (-1);
-
 	rwrite = write(filedesc, text_content, size);
 
-	if (rwrite == -1)
+	if (rwrite == -1 || filedesc == -1)
 		return (-1);
 
 	close(filedesc);
