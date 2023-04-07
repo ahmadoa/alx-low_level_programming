@@ -1,4 +1,5 @@
 #include "main.h"
+#include <errno.h>
 
 /**
  * append_text_to_file - appends text content to file
