@@ -14,11 +14,14 @@ int create_file(const char *filename, char *text_content)
 	/*rwr a var to check the return of write and if it was successfull*/
 	int rwr;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
 
-	while (text_content[size] != '\0')
-		size++;
+	if (!text_content)
+	{
+		while (text_content[size] != '\0')
+			size++;
+	}
 
 	filedesc = open(filedesc, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
