@@ -25,9 +25,6 @@ unsigned int binary_to_uint(const char *b)
 
 	if (isBin)
 	{
-		/**
-		 * reset index to the start of the string
-		 */
 		index = 0;
 
 		while (b[index] != '\0')
@@ -47,4 +44,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
+
+	return (res);
 }
