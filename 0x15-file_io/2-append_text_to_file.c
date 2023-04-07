@@ -25,7 +25,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	filedesc = open(filename, O_WRONLY | O_APPEND);
 
 	if (filedesc == -1)
+	{
 		return (-1);
+	}
+	else
+		return (1);
 
 	rwr = write(filedesc, text_content, size);
 
