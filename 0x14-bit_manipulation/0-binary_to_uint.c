@@ -9,38 +9,29 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int res = 0;
-	int isBin = 1;
-	int size = 0;
 	int i;
-	int bs = 1;
+	int size = 0;
+	int currIndex = 0;
 
 	if (b == NULL)
 		return (0);
 
 	while (b[size] != '\0')
 	{
-		if ((b[size] != '0' && b[size] != '1') || b[size] == NULL)
-		{
-			isBin = 0;
-			break;
-		}
 		size++;
 	}
 
-	if (isBin)
+	for (i = size - 1; i >= 0; i--)
 	{
-		for (i = size - 1; i >= 0; i--)
+		if (b[i] == '1')
 		{
-			if (b[i] == '1')
-			{
-				res = res + bs;
-			}
-			bs = bs * 2;
+			res = res + (1 << currIndex);
 		}
-	}
-	else
-	{
-		return (0);
+		else if (b[i] != '0')
+		{
+			return (0);
+		}
+		currIndex++;
 	}
 
 	return (res);
