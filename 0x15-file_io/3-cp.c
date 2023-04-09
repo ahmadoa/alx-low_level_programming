@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * ReadERR - error if reading from file fails
