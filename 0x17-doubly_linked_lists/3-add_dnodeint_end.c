@@ -24,7 +24,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	temp->n = n;
 	temp->next = NULL;
 	temp->prev = NULL;
-	tr = head;
+	tr = *head;
 	while (tr->next != NULL)
 		tr = tr->next;
 	tr->next = temp;
